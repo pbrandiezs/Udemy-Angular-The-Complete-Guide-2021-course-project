@@ -10,7 +10,8 @@ import { RecipeService } from '../recipe.service';
   templateUrl: './recipe-list.component.html',
   styleUrls: ['./recipe-list.component.css']
 })
-export class RecipeListComponent implements OnInit, OnDestroy {
+// export class RecipeListComponent implements OnInit, OnDestroy {
+export class RecipeListComponent implements OnInit {
   recipes: Recipe[];
   subscription: Subscription;
 
@@ -32,7 +33,7 @@ export class RecipeListComponent implements OnInit, OnDestroy {
     this.router.navigate(['new'], {relativeTo: this.route});
   }
 
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
-  }
+  // ngOnDestroy() {
+  //   this.subscription.unsubscribe();
+  // }
 }
