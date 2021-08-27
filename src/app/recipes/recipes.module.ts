@@ -1,7 +1,4 @@
 import { NgModule } from '@angular/core';
-
-
-
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -27,14 +24,7 @@ import { RecipesRoutingModule } from './recipes-routing.module';
         RouterModule,
         CommonModule,
         ReactiveFormsModule,
-        RecipesRoutingModule],
-    exports: [
-        RecipesComponent,
-        RecipeListComponent,
-        RecipeDetailComponent,
-        RecipeItemComponent,
-        RecipeStartComponent,
-        RecipeEditComponent,
+        RecipesRoutingModule
     ]
 })
 export class RecipesModule {}
